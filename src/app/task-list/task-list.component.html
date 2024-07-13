@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>רשימת משימות</h1>
+    @if(taskList.length > 0){
+    <div class="task-list">
+        @for (task of taskList; track task.id) {
+        <app-task-details [task]="task" (deleteTask)="deleteTask(task)"></app-task-details>
+        }
+    </div>
+    }
+
+</div>
+<!-- <h1>רשימת משימות</h1>
+<button mat-raised-button>הוסף משימה</button>
+<app-task-details></app-task-details> -->

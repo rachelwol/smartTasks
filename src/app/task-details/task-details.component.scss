@@ -1,0 +1,40 @@
+.task-details {
+    width: 500px;
+    margin: 10px auto;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: space-between;
+    flex: 70;
+}
+
+mat-card-title {
+    display: flex;
+}
+
+.checkbox {
+    margin-right: auto;
+    flex: 10;
+}
+
+.mat-card-title {
+    flex: 1;
+}
+
+.mat-card-actions {
+    display: flex;
+    align-items: center;
+}
+
+.action-button {
+    margin-right: 8px;
+}
+
+::ng-deep .mat-mdc-card-header-text{
+    width: 100% !important;
+}
+
+mat-icon{
+    cursor: pointer;
+}
